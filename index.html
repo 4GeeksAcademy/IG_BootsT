@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- este y la linea de abajo son tag de metadatos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+     rel="stylesheet" 
+     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+     crossorigin="anonymous"> <!-- este es el link de bootstrap-->
+    <script src="https://kit.fontawesome.com/70d3ffa381.js" crossorigin="anonymous"></script> <!-- este es el link para los iconos desde fontawesome-->
+    <title>IG_PAG</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand col-8" href="#">
+        <i class="fa-brands fa-instagram" ></i>
+        Instagram
+      </a> <!-- termina el logotipo y Intagram-->
+      <!-- Comienza el boton de subir la imagente-->
+      <button type="button" class="btn btn-success col-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Create a New Post</button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Caption:</label>
+                  <textarea class="form-control" placeholder="Add the caption of your post here" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="container-fluid">
+              <a class="navbar-brand col-2" href="#">
+                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-location-dot"></i>
+              </a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>   
+            </div>
+          </div>
+        </div>
+      </div> <!--termina el boton y todo sobre subir la foto -->
+      <!--ultima parte de la ruedita-->
+      <div class="btn-group"><!--comenzamos con el botton que es un dropdown-->
+        <button class="btn btn-secondary btn-sm dropdown-toggle col-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button><!--aqui viene el menu que se me abre al darle al boton-->
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li><hr class="dropdown-divider"></li><!-- es la linia que aparecen antes del ultimo menu-->
+          <li><a class="dropdown-item text-danger" href="#">log out</a></li>
+        </ul>
+      </div><!-- terminamos el boton -->
+    </div>
+  </nav> <!--aqui cerramos en nav, es la parte de arriba donde aparece el logo, el boton de subir y el boton de configuracion (la rueda)-->
+ 
+  <!--comienza la ultima parte, boton para vetanas en horizontal y vertical-->
+  <nav>
+  <div class="contendor d-flex justify-content-center">
+    
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-users"></i></button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-user"></i></button>
+    </div>
+  </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent"> 
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0"><!-- este es para el horizontal-->
+      <div class="container">
+        <div class="row">
+          <div class="col" >
+            <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-navegacion-linea_114360-4684.jpg?size=626&ext=jpg&ga=GA1.1.1423256653.1701430656&semt=sph"
+            alt="imagen1" class="img-fluid">
+            
+          </div>
+          <div class="col" style="width: 33%; height: auto;">
+            <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-motor-busqueda_114360-306.jpg?size=626&ext=jpg&ga=GA1.1.1423256653.1701430656&semt=sph"
+            alt="imagen2" class="img-fluid">
+          </div>
+          <div class="col" style="width: 33%; height: auto;">
+           
+           <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-www_114360-2073.jpg?size=626&ext=jpg&ga=GA1.1.1423256653.1701430656&semt=sph"
+            alt="imagen3" class="img-fluid">
+          </div>
+        </div>
+        
+      </div>
+
+      
+    </div>
+    <div class="justify-content-center">
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"><!-- este es para las foto en vertical-->
+      <!--comienzo con la primera imagen-->
+      <div class="card d-flex justify-content-center mb-5" style="width: 400px;">
+        <div class="card-header d-flex bg-white justify-content-between" >
+            <p>Este es mi primero</p>
+            <p>22/04</p>
+        </div>
+        <div class="card-body">
+            <div class="col bg-white" style="width: auto; height: auto;">
+   
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-www_114360-2073.jpg?size=626&ext=jpg&ga=GA1.1.1423256653.1701430656&semt=sph"
+                 alt="imagen3" class="img-fluid">
+               </div>
+        </div>
+        <div class="card-footer bg-white">
+            <p><strong>Code</strong></br>
+            2 days ago</p>
+        </div>
+    </div>
+
+    <!--comienza la segunda imagen-->
+    <div class="card d-flex justify-content-center mb-5" style="width: 400px;">
+        <div class="card-header d-flex bg-white justify-content-between" >
+            <p>Este es mi primero</p>
+            <p>22/04</p>
+        </div>
+        <div class="card-body">
+            <div class="col bg-white" style="width: auto; height: auto;">
+   
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-motor-busqueda_114360-306.jpg?size=626&ext=jpg&ga=GA1.1.1423256653.1701430656&semt=sph"
+                alt="imagen2"n class="img-fluid">
+               </div>
+        </div>
+        <div class="card-footer bg-white">
+            <p><strong>Code</strong></br>
+            2 days ago</p>
+        </div>
+    </div>
+    <!--comienza la tercera imagen-->
+    <div class="card d-flex justify-content-center" style="width: 400px;">
+        <div class="card-header d-flex bg-white justify-content-between" >
+            <p>Este es mi primero</p>
+            <p>22/04</p>
+        </div>
+        <div class="card-body">
+            <div class="col bg-white" style="width: auto; height: auto;">
+   
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-vector-concepto-abstracto-adiccion-internet-sustitucion-vida-real-trastorno-vida-linea-adiccion-web-comportamiento-adictivo-digital-uso-excesivo-internet-metafora-abstracta-redes-sociales_335657-2266.jpg?size=626&ext=jpg&ga=GA1.1.1423256653.1701430656&semt=sph"
+                alt="imagen3" class="img-fluid">
+               </div>
+        </div>
+        <div class="card-footer bg-white">
+            <p><strong>Code</strong></br>
+            2 days ago</p>
+        </div>
+    </div>
+  </div>
+</div>
+      
+      
+    </div>
+  </div>
+
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!--estos dos script tag de arriba son para java script bootstrap-->
+</body>
+</html>
